@@ -22,6 +22,7 @@ $('#derecha').on("swiperight",function(){
 	
 });
 	},false);
+});
 document.addEventListener("deviceready",function(){
 		
 		$('#beep').tap(function (){
@@ -32,7 +33,10 @@ document.addEventListener("deviceready",function(){
 			navigator.notification.vibrate (1000);
 		})	
 	},false);
- document.addEventListener("deviceready",function(){
+});
+
+$(document).ready(function(e) {
+    document.addEventListener("deviceready",function(){
 		$('#disp table td').eq(3).text(device.model);
 		$('#disp table td').eq(5).text(device.cordova);
 		$('#disp table td').eq(7).text(device.platform);
@@ -52,7 +56,9 @@ document.addEventListener("deviceready",function(){
 	  },false);
 	  
 	  },false);
+	  
 });
+
 function escribehistoria(accion){
 	$('#eHistoria').append('<li>'+accion+'</li>');
 }

@@ -1,28 +1,28 @@
-﻿// JavaScript Document
+// JavaScript Document
 
 $(document).ready(function(e) {
     document.addEventListener("deviceready",function(){
 		
 		$('#izquierda').on("swipeleft",function(){
-			navigator.notification.alert("Deslizo hacia la izquierda",function(){"Aplicación 8","Aceptar"});
+			navigator.notification. alert("Deslizo a la izquierda",function(){"Aplicacion8","Aceptar"})
 });
 
 $('#derecha').on("swiperight",function(){
-	navigator.notification.confirm("¿Que quieres hacer?",function(opt){
+	navigator.notification. confirm("¿Que quieres hacer?",function(opt){
 		switch(opt)
 		{
 			case 1:
 			navigator.notification.beep(1);
 			break;
 			
-			case 2:
-			navigator.notification.vibrate(1000);
+			case 1:
+			navigator.notification.vibrate (1000);
 			break;
 		}
-	},"Aplicación 8","Beep,Vibrar,Cancelar");
-	
+	},"Aplicacion8","Beep,Vibrar,Cancelar");
+		
 });
-	},false);
+},false);
 });
 $(document).ready(function(e){
     document.addEventListener("deviceready",function(){
@@ -37,7 +37,6 @@ $(document).ready(function(e){
 		
 	},false);
 });
-
 $(document).ready(function(e) {
     document.addEventListener("deviceready",function(){
 		$('#disp table td').eq(3).text(device.model);
@@ -45,7 +44,6 @@ $(document).ready(function(e) {
 		$('#disp table td').eq(7).text(device.platform);
 		$('#disp table td').eq(9).text(device.version);
 		$('#disp table td').eq(11).text(device.uuid);
-
 	  document.addEventListener("pause",function(){
 		  escribehistoria ('la app se pausó');
 	  },false);

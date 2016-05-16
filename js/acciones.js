@@ -22,7 +22,6 @@ $('#derecha').on("swiperight",function(){
 	
 });
 	},false);
-});
 document.addEventListener("deviceready",function(){
 		
 		$('#beep').tap(function (){

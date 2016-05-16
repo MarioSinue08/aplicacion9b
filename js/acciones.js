@@ -57,7 +57,6 @@ $(document).ready(function(e) {
 		  escribehistoria ('la app se desconecto a la red');
 	  },false);
 	  
-	  },false);
 	  
 });
 

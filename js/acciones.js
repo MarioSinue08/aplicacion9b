@@ -37,6 +37,7 @@ $(document).ready(function(e){
 		
 	},false);
 });
+
 $(document).ready(function(e) {
     document.addEventListener("deviceready",function(){
 		$('#disp table td').eq(3).text(device.model);
@@ -44,6 +45,7 @@ $(document).ready(function(e) {
 		$('#disp table td').eq(7).text(device.platform);
 		$('#disp table td').eq(9).text(device.version);
 		$('#disp table td').eq(11).text(device.uuid);
+
 	  document.addEventListener("pause",function(){
 		  escribehistoria ('la app se pausó');
 	  },false);
@@ -57,6 +59,7 @@ $(document).ready(function(e) {
 		  escribehistoria ('la app se desconecto a la red');
 	  },false);
 	  
+	  },false);
 	  
 });
 

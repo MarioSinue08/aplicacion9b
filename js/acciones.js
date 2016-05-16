@@ -4,8 +4,9 @@ $(document).ready(function(e) {
     document.addEventListener("deviceready",function(){
 		
 		$('#izquierda').on("swipeleft",function(){
-			navigator.notification. alert("Deslizo a la izquierda",function(){"Aplicacion8","Aceptar"})
+			navigator.notification.alert("Deslizo hacia la izquierda",function(){"Aplicación 8","Aceptar"});
 });
+
 $('#derecha').on("swiperight",function(){
 	navigator.notification.confirm("¿Que quieres hacer?",function(opt){
 		switch(opt)
@@ -23,7 +24,8 @@ $('#derecha').on("swiperight",function(){
 });
 	},false);
 });
-document.addEventListener("deviceready",function(){
+$(document).ready(function(e){
+    document.addEventListener("deviceready",function(){
 		
 		$('#beep').tap(function (){
 			navigator.notification.beep (1);
@@ -31,10 +33,10 @@ document.addEventListener("deviceready",function(){
 		
 		$('#vibrar').tap(function (){
 			navigator.notification.vibrate (1000);
-		})	
+		})
+		
 	},false);
 });
-
 $(document).ready(function(e) {
     document.addEventListener("deviceready",function(){
 		$('#disp table td').eq(3).text(device.model);
@@ -62,4 +64,3 @@ $(document).ready(function(e) {
 function escribehistoria(accion){
 	$('#eHistoria').append('<li>'+accion+'</li>');
 }
-
